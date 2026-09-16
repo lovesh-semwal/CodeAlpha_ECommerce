@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - CodeAlpha Store</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>CodeAlpha Store</h1>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart 🛒</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="checkout-section">
+
+            <div class="checkout-card">
+
+                <h2>Checkout</h2>
+
+                <div id="checkout-items">
+                    <!-- Cart items will appear here -->
+                </div>
+
+                <div id="checkout-total">
+                    <!-- Total will appear here -->
+                </div>
+
+                <form id="checkout-form">
+
+                    <h3>Shipping Address</h3>
+
+                    <textarea
+                        id="shipping-address"
+                        placeholder="Enter your complete shipping address"
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="product-btn"
+                    >
+                        Place Order 📦
+                    </button>
+
+                </form>
+
+                <p id="checkout-message"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>

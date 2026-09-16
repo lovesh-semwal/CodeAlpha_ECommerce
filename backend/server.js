@@ -6,6 +6,7 @@ require("dotenv").config();
 const app = express();
 const productRoutes = require("./routes/productRoutes");
 const authRoutes = require("./routes/authRoutes");
+const orderRoutes = require("./routes/orderRoutes");
 
 // Middleware
 app.use(cors());
@@ -14,6 +15,7 @@ app.use(express.json());
 // Routes
 app.use("/api/products", productRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/orders", orderRoutes);
 
 // Test route
 app.get("/", (req, res) => {
