@@ -42,7 +42,12 @@
     </main>
 
     <script src="js/auth.js"></script>
-    <script src="js/cart.js"></script>
+<script>
+    if (!localStorage.getItem("token")) {
+        window.location.href = "login.html";
+    }
+</script>
+<script src="js/cart.js"></script>
 
 </body>
 </html>
